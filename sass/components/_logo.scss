@@ -1,0 +1,22 @@
+@use'../utils/variables';
+
+.header__logo {
+    color: variables.$accent-color;
+    text-decoration: none;
+    font-family: variables.$logo-text;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    margin-right: 100px;
+}
+
+.footer__logo {
+    color: variables.$accent-color;
+    text-decoration: none;
+    font-family: variables.$logo-text;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    margin-bottom: 9px;
+    display: block;
+}

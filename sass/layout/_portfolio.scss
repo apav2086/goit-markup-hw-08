@@ -1,0 +1,114 @@
+@use'../utils/variables';
+
+.portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.button-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.portfolio-filter {
+    font-family: variables.$main-text;
+    color: variables.$portfolio-button-text;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    display: block;
+    border-radius: 4px;
+    padding: 6px 26px;
+    background-color: #F5F4FA;
+}
+
+.portfolio-filter:hover,
+.portfolio-filter:focus {
+    color: variables.$secondary-title-color;
+    background-color: variables.$accent-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* PORTFOLIO PROJECTS SECTION */
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * variables.$card-gap);
+    margin-left: calc(-1 * variables.$card-gap);
+}
+
+.portfolio-item {
+    flex-basis: calc(33.3333333333% - variables.$card-gap);
+    margin-left: variables.$card-gap;
+    margin-top: variables.$card-gap;
+    cursor: pointer;
+}
+
+.portfolio-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-item:hover .overlay-text,
+.portfolio-item:focus .overlay-text {
+    transform: translateY(0);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-text {
+    font-family: variables.$main-text;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5555555556;
+    position: absolute;
+    display: block;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-content {
+    padding: 20px 24px;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: variables.$main-text-color;
+}
+
+.portfolio-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    color: variables.$secondary-text-color;
+    margin-top: 4px;
+}

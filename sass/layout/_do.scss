@@ -1,0 +1,45 @@
+@use'../utils/variables';
+
+
+
+@media (max-width: 768px) {
+    .do {
+        display: none;
+    }
+}
+
+.do {
+    padding-top: 0;
+    padding-bottom: 94px;
+}
+
+.section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    color: variables.$main-text-color;
+    padding-bottom: 50px;
+}
+
+.do__list {
+    display: flex;
+}
+
+.do__item:not(:last-child) {
+    margin-right: 30px;
+
+}
+
+.do__item {
+    position: relative;
+}
+
+
+.do__text {
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16.41/14);
+}

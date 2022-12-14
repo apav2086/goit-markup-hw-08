@@ -1,0 +1,59 @@
+@use'../utils/variables';
+
+
+.hero__section {
+    background-color: variables.$main-text-color;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url('../images/img17hero.jpg');
+    padding-top: 200px;
+    padding-bottom: 200px;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hero__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: variables.$secondary-title-color;
+    margin-bottom: 30px;
+}
+
+.hero__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: variables.$secondary-title-color;
+    background-color: variables.$link-color;
+    cursor: pointer;
+    display: block;
+    align-items: center;
+    border-radius: 4px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: var(--button-transition);
+
+    &:hover,
+    &:focus {
+            background-color: darkblue;
+            transition: variables.$transition-two;
+        }
+
+}
+

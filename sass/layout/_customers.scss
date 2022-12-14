@@ -1,0 +1,54 @@
+@use'../utils/variables';
+
+/* REGULAR CUSTOMERS */
+.customers {
+    padding: 94px 0;
+}
+
+.customers__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    @media (max-width:480px) {
+    flex-wrap: wrap;
+    flex-basis: calc(100%/ 2);
+        }
+    @media (max-width: 768px) {
+                flex-basis: calc(100% / 3);
+            }
+        }
+
+
+.customers__item:not(:last-child) {
+    margin-right: 30px;
+
+    
+}
+
+.customer__link {
+    color: #AFB1B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+@media (max-width:480px) {
+    width: 210px;
+}
+    @media (max-width:760px) {
+    width: 226px;
+    }
+}
+
+.customer__link:hover,
+.customer__link:focus {
+    color: variables.$accent-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customer__icon {
+    fill: currentColor;
+
+}
