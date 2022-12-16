@@ -4,7 +4,11 @@
 .do {
     padding-top: 0;
     padding-bottom: 94px;
-}
+    @media (max-width: 1199px) {
+        display: none;
+        }
+    }
+
 
 .section__title {
     font-weight: 700;

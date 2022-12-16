@@ -522,8 +522,6 @@ textarea:focus {
 }
 
 .modal {
-  height: 581px;
-  width: 528px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -532,6 +530,18 @@ textarea:focus {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    height: 609px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    height: 581px;
+    width: 528px;
+  }
 }
 
 .modal__button--close {
@@ -704,6 +714,11 @@ textarea:focus {
 .do {
   padding-top: 0;
   padding-bottom: 94px;
+}
+@media (max-width: 1199px) {
+  .do {
+    display: none;
+  }
 }
 
 .section__title {
@@ -944,18 +959,46 @@ textarea:focus {
 }
 
 /* REGULAR CUSTOMERS */
-.customers {
-  padding: 94px 0;
+@media screen and (max-width: 1199px) {
+  .customers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .customers__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
-.customers__item:not(:last-child) {
+.customers__item {
+  margin-bottom: 30px;
   margin-right: 30px;
+}
+@media screen and (max-width: 767px) {
+  .customers__item:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customers__item:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__item {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .customers__item:nth-child(6n) {
+    margin-right: 0;
+  }
 }
 
 .customer__link {
@@ -963,16 +1006,24 @@ textarea:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  width: 210px;
 }
-
-.customer__link:hover,
-.customer__link:focus {
+.customer__link:hover, .customer__link:focus {
   color: #2196F3;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .customer__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer__link {
+    width: 170px;
+  }
 }
 
 .customer__icon {
@@ -985,17 +1036,38 @@ textarea:focus {
 }
 
 .footer__container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   display: flex;
-  align-items: baseline;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 480px) {
+  .footer__container {
+    width: 480px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    width: 768px;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__container {
+    width: 1200px;
+    text-align: left;
+    justify-content: center;
+  }
 }
 
 .footer__container--left {
   display: block;
   margin-right: 70px;
+  margin-bottom: 60px;
 }
 
 .footer__container--middle {
@@ -1009,10 +1081,20 @@ textarea:focus {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
   margin-bottom: 9px;
   display: block;
+}
+@media screen and (max-width: 1199px) {
+  .footer__logo {
+    font-size: 24px;
+    line-height: 1.1741666667;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+    line-height: 1.1923076923;
+  }
 }
 
 .footer__addres {
@@ -1063,9 +1145,7 @@ textarea:focus {
   border-radius: 50%;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.media__link:hover,
-.media__link:focus {
+.media__link:hover, .media__link:focus {
   color: white;
   background-color: #2196F3;
 }
@@ -1085,6 +1165,12 @@ textarea:focus {
 .footer__form {
   display: flex;
 }
+@media screen and (max-width: 1199px) {
+  .footer__form {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
 .subscription__title {
   color: white;
@@ -1092,6 +1178,11 @@ textarea:focus {
   font-size: 14px;
   line-height: 1.1721428571;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .subscription__title {
+    margin-top: 60px;
+  }
 }
 
 .subscription__input {
@@ -1140,10 +1231,13 @@ textarea:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: rgba(0, 0, 0, 0.2) 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.subscription__button:hover,
-.subscription__button:focus {
+.subscription__button:hover, .subscription__button:focus {
   background-color: darkblue;
+}
+@media screen and (max-width: 1199px) {
+  .subscription__button {
+    margin-top: 20px;
+  }
 }
 
 .subscription__icon {

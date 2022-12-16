@@ -6,17 +6,37 @@
 }
 
 .footer__container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    display: flex;
-    align-items: baseline;
+    width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    
+        @media screen and (min-width: 480px) {
+            width: 480px;
+           
+            text-align: center;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 768px;
+            text-align: center;
+        }
+    
+        @media (min-width: 1200px) {
+            width: 1200px;
+            text-align: left;
+            justify-content: center;
+        }
+    
 }
 
 .footer__container--left {
     display: block;
     margin-right: 70px;
+    margin-bottom: 60px;
 }
 
 .footer__container--middle {
@@ -30,10 +50,16 @@
     text-decoration: none;
     font-family: variables.$logo-text;
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31/26);
     margin-bottom: 9px;
     display: block;
+@media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: calc(28.18/24);
+}
+@media screen and (min-width: 1200px) {
+    font-size: 26px;
+        line-height: calc(31/26);
+}
 }
 
 .footer__addres {
@@ -84,13 +110,14 @@
     border-radius: 50%;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            color: white;
+            background-color: variables.$accent-color;
+        }
 }
 
-.media__link:hover,
-.media__link:focus {
-    color: white;
-    background-color: variables.$accent-color;
-}
+
 
 .media__icon {
     fill: currentColor;
@@ -102,10 +129,15 @@
 
 .footer__container--right {
     margin-left: auto;
+    
 }
 
 .footer__form {
     display: flex;
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        justify-content: center;
+        }
 }
 
 .subscription__title {
@@ -114,6 +146,9 @@
     font-size: 14px;
     line-height: calc(16.41/14);
     margin-bottom: 20px;
+    @media screen and (max-width: 767px) {
+            margin-top: 60px;
+        }
 }
 
 .subscription__input {
@@ -162,13 +197,18 @@
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: variables.$button-transition;
+    &:hover,
+    &:focus {
+            background-color: darkblue;
+    
+        }
+    @media screen and (max-width: 1199px) {
+        margin-top: 20px;
+    
+    }
 }
 
-.subscription__button:hover,
-.subscription__button:focus {
-    background-color: darkblue;
 
-}
 
 .subscription__icon {
     margin-left: 30px;
