@@ -43,18 +43,10 @@
     display: flex;
     align-items: center;
     margin-left: auto;
-    @media (max-width: 480px) {
-    display: none;    
-    }
-    @media (max-width: 768px) {
-        flex-direction: column;
 }
-}
+
 .contact__item:not(:last-child) {
     margin-right: 50px;
-    @media (max-width: 768px) {
-    margin-bottom: 10px;
-}
 }
 
 
@@ -99,25 +91,4 @@
 .contact__icon {
     margin-right: 10px;
     fill: currentColor;
-}
-
-@media (max-width:768px) {
-    .contact__item {
-    flex-direction: column;
-    margin-top: 21px;
-    padding-bottom: 10px;
-}
-}
-@media (max-width:768px) {
-    .header__logo {
-      font-size: 24px;
-      line-height: calc(28.18 / 24);
-      margin-right: 88px;
-    }
-}  
-.mobile-menu__container {
-    @media (min-width: 480px) {
-        display: none;
-
-    }
 }

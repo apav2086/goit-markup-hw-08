@@ -1,6 +1,5 @@
 @use'../utils/variables';
 
-
 .hero__section {
     background-color: variables.$main-text-color;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
@@ -12,7 +11,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .hero__container {
@@ -24,12 +22,17 @@
 
 .hero__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60/44);
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     color: variables.$secondary-title-color;
     margin-bottom: 30px;
+    @media screen and (min-width: 1200px){
+        font-size: 44px;
+        line-height: calc(60/44);
+        
+    }
 }
 
 .hero__button {
