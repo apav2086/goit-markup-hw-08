@@ -39,21 +39,23 @@
         </a>
             </li>
             <li class="contact__item">
-                <a class="contact__link" href="tel:380961111111">
+                <a class="contact__link" href="tel:12127724150">
                     <svg class="contact__icon" width="10px" height="16px">
                     <use href="./images/sprite.svg#icon-smartphone"></use>
                 </svg>
-                +380961111111</a>
+                +12127724150</a>
             </li>
-
         </ul>
+        <button class="mobile-menu__button" mobile-menu__button--open type="button"><svg class="contact__icon" width="24px"
+                height="16px">
+                <use href="./images/sprite.svg#icon-menu_24px"></use>
+            </svg></button>
     </div>
    </header>
-   <main>
+  <main>
 <section class="hero__section">
 <div class="hero__container">
   <h1 class="hero__title">EFFECTIVE SOLUTIONS FOR<br> YOUR BUSINESS</h1>
-<!-- button-->
 <button class="hero__button" data-modal-open type="button">Request our service</button>
 </div>
 </section> 
@@ -374,7 +376,7 @@
     </form>
 </div>
 </div>
-  </footer>-->
+  </footer>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button class="modal__button modal__button--close" data-modal-close><svg class="modal__icon" width="11px" height="11px">
@@ -435,5 +437,57 @@
         </form>
     </div>
 </div>
-<script src="./js/modal.js"></script> -->
+<div class="backdrop is-hidden" mobile-menu>
+    <div class="menu">
+        <button class="mobile-menu__button--close" close-menu><svg class="modal__icon" width="40px"
+                height="40px">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg></button>
+        <div>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__link navigation__link--current" href="./index.html">Studio</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contact__list">
+                <li class="contact__item">
+                    <a class="contact__link" href="tel:12127724150">
+                        +12127724150</a>
+                </li>
+                <li class="contact__item">
+                    <a class="contact__link" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+            <ul class="socials__list">
+                <li class="socials__item">
+                    <a class="socials__link" href="#">Instagram>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a class="socials__link" href="#">Twitter>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a class="socials__link" href="#">Facebook>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a class="socials__link" href="#">Linkedin>
+                    </a>
+                </li>
+            </ul>
+                </div>
+            </div>
+<script src="./js/modal.js"></script>
+<script src=".js/mobile-menu.js"></script>
 </body>
