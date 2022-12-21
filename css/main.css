@@ -1409,6 +1409,11 @@ textarea:focus {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .navigation__list {
+    display: none;
+  }
+}
 
 .navigation__item:not(:last-child) {
   margin-right: 50px;
@@ -1428,24 +1433,15 @@ textarea:focus {
 .navigation__link:hover, .navigation__link:focus {
   color: #2196F3;
 }
-@media screen and (max-width: 767px) {
-  .navigation__link {
-    display: none;
-  }
-}
 
 .contact__list {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 @media screen and (max-width: 767px) {
   .contact__list {
     display: none;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contact__list {
-    flex-direction: column;
   }
 }
 

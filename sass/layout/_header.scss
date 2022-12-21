@@ -26,6 +26,10 @@
 .navigation__list {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 767px) {
+    
+                display: none;
+        }
 }
 
 .navigation__item:not(:last-child) {
@@ -47,25 +51,20 @@
     &:focus {
             color: variables.$link-color;
         }
- @media screen and (max-width: 767px) {
-     display: none;
- }
+ 
 }
 
 
 
 .contact__list {
     display: flex;
-
+    align-items: center;
     margin-left: auto;
     @media screen and (max-width: 767px) {
-           display: none; 
+            display: none;
         }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        flex-direction: column;
+    }
 
-          }
-}
 
 .contact__item:not(:last-child) {
     margin-right: 50px;
