@@ -11,7 +11,7 @@
         rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
-    <title>Task_8_from_7</title>
+    <title>Task_8</title>
 </head>
 <body>
    <header class="header__section">
@@ -47,14 +47,14 @@
             </li>
         </ul>
     </div>
-    <button class="menu-toggle  js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <button class="open-btn js-open-menu"><svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd"
                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                 clip-rule="evenodd"></path>
-        </svg>
-    </button>
-   </header>
+        </svg></button>
+    </div>
+    </header>
   <main>
 <section class="hero__section">
 <div class="hero__container">
@@ -440,60 +440,57 @@
         </form>
     </div>
 </div>
-           <!-- <div class="menu-container js-menu-container" id="mobile-menu">
-                <button class="menu-toggle js-close-menu">
-                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                        <path fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            
-                <ul class="mobile-menu">
-                <li class="link">
-                    <a class="navigation__link" href="./index.html">Studio</a>
-                </li>
-                <li class="link">
-                    <a class="navigation__link" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li class="link">
-                    <a class="navigation__link" href="#">Contacts</a>
-                </li>
-                </ul>
-<!--<ul class="mobile-menu__contacts">
-    <li class="contact__item">
-        <a class="contact__link" href="tel:12127724150">
-            +12127724150</a>
-    </li>
-<li class="contact__item">
-    <a class="contact__link" href="mailto:info@devstudio.com">
-        info@devstudio.com
-    </a>
-</li>
-</ul>
-<ul class="mobile-menu__socials">
-    <li class="socials__item">
-        <a class="socials__link" href="#">Instagram
+<div class="menu-container js-menu-container">
+    <button class="js-close-menu">
+    <svg class="contact__icon" width="18.67px" height="18.67px">
+        <use href="./images/sprite.svg#icon-close"></use>
+    </svg>
+    </button>
+    <ul class="mobile-menu__links">
+        <li class="link">
+            <a class="link__item" href="./index.html">Studio</a>
+        </li>
+        <li class="link">
+            <a class="link__item" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="link">
+            <a class="link__item" href="#">Contacts</a>
+        </li>
+    </ul>
+    <ul class="mobile-menu__contacts">
+        <li class="contacts__item">
+            <a class="contacts__phone" href="tel:12127724150">
+                +12127724150</a>
+        </li>
+    <li class="contacts__item">
+        <a class="contacts__email" href="mailto:info@devstudio.com">
+            info@devstudio.com
         </a>
     </li>
-    <li class="socials__item">
-        <a class="socials__link" href="#">Twitter
-        </a>
-    </li>
-    <li class="socials__item">
-        <a class="socials__link" href="#">Facebook
-        </a>
-    </li>
-    <li class="socials__item">
-        <a class="socials__link" href="#">Linkedin
-        </a>
-        </a>
-    </li>
-</ul>
-            </div>-->
+    </ul>
+    <ul class="mobile-menu__social">
+        <li class="social__item">
+            <a class="social__link" href="#">Instagram
+            </a>
+        </li>
+        <div class="vl"></div>
+        <li class="social__item">
+            <a class="social__link" href="#">Twitter
+            </a>
+        </li>
+        <div class="vl"></div>
+        <li class="social__item">
+            <a class="social__link" href="#">Facebook
+            </a>
+        </li>
+        <div class="vl"></div>
+        <li class="social__item">
+            <a class="social__link" href="#">Linkedin
+            </a>
+            </a>
+        </li>
+    </ul>
+</div>
 <script src="./js/modal.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-<script src=".js/mobile-menu.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
