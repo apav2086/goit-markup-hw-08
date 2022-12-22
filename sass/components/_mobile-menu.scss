@@ -64,6 +64,14 @@
             color: variables.$link-color;
         }
 }
+.link__item {
+    color: #212121;
+    &:hover,
+        &:focus {
+            color: variables.$link-color;
+        }
+    }
+
 .mobile-menu__contacts {
 margin-top: 306px;
 }

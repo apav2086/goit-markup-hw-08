@@ -539,6 +539,13 @@ textarea:focus {
   color: #2196F3;
 }
 
+.link__item {
+  color: #212121;
+}
+.link__item:hover, .link__item:focus {
+  color: #2196F3;
+}
+
 .mobile-menu__contacts {
   margin-top: 306px;
 }
