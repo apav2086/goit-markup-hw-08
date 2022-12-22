@@ -12,6 +12,10 @@
       background-color: transparent; 
       margin-top: 22px;
       margin-right: 22px;
+     &:hover,
+        &:focus {
+            color: variables.$link-color;
+        }
     }
 }
 
@@ -88,7 +92,7 @@ margin-top: 306px;
     margin-top: 64px;
 }
 .social__item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
     border-right: #21212133;
 }
 .social__link {
@@ -99,7 +103,10 @@ font-size: 18px;
 line-height: calc(22/18);
 }
 
-.vl {
-    color: #21212133;
-            height: 10px;
-        }
+  .vertical-line {
+      display: inline-block;
+      border-left: 1px solid #21212133;
+      margin: 0 10px;
+      height: 20px;
+  }
+

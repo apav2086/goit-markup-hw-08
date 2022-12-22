@@ -489,6 +489,9 @@ textarea:focus {
     margin-top: 22px;
     margin-right: 22px;
   }
+  .open-btn:hover, .open-btn:focus {
+    color: #2196F3;
+  }
 }
 @media screen and (min-width: 768px) {
   .open-btn {
@@ -568,7 +571,7 @@ textarea:focus {
 }
 
 .social__item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
   border-right: rgba(33, 33, 33, 0.2);
 }
 
@@ -580,9 +583,11 @@ textarea:focus {
   line-height: 1.2222222222;
 }
 
-.vl {
-  color: rgba(33, 33, 33, 0.2);
-  height: 10px;
+.vertical-line {
+  display: inline-block;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  margin: 0 10px;
+  height: 20px;
 }
 
 .hero__section {
