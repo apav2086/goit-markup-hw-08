@@ -10,8 +10,6 @@
     .open-btn {
       border: none; 
       background-color: transparent; 
-      margin-top: 22px;
-      margin-right: 22px;
      &:hover,
         &:focus {
             color: variables.$link-color;
@@ -50,22 +48,15 @@
         font-weight: bold;
     border: none;
 }
-.link {
+
+.link__item {
     font-family: variables.$main-text;
     font-weight: 500;
     font-size: 40px;
     color: #212121;
     text-decoration: none;
-    line-height: calc(46.88/40);
-    margin-left: 40px;
-    margin-bottom: 32px;    
-        &:hover,
-        &:focus {
-            color: variables.$link-color;
-        }
-}
-.link__item {
-    color: #212121;
+        line-height: calc(46.88/40);
+        margin-left: 40px;
     &:hover,
         &:focus {
             color: variables.$link-color;
