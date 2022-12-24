@@ -523,21 +523,25 @@ textarea:focus {
   border: none;
 }
 
-.link__item {
+.link {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 40px;
   color: #212121;
   text-decoration: none;
   line-height: 1.172;
-  margin-left: 40px;
+  margin-bottom: 32px;
 }
-.link__item:hover, .link__item:focus {
+.link:hover, .link:focus {
   color: #2196F3;
 }
 
 .mobile-menu__contacts {
-  margin-top: 306px;
+  margin-top: 274px;
+}
+
+.contacts__item {
+  margin-bottom: 32px;
 }
 
 .contacts__phone {
@@ -547,8 +551,6 @@ textarea:focus {
   color: #2196F3;
   text-decoration: none;
   line-height: 1.1717647059;
-  margin-left: 40px;
-  margin-bottom: 32px;
 }
 
 .contacts__email {
@@ -558,8 +560,6 @@ textarea:focus {
   color: #757575;
   text-decoration: none;
   line-height: 1.1720833333;
-  margin-left: 40px;
-  margin-top: 32px;
 }
 
 .mobile-menu__social {
@@ -570,6 +570,10 @@ textarea:focus {
 .social__item:not(:last-child) {
   margin-right: 10px;
   border-right: rgba(33, 33, 33, 0.2);
+}
+
+.social__item {
+  margin-bottom: 48px;
 }
 
 .social__link {
@@ -1502,6 +1506,7 @@ textarea:focus {
   .header__container {
     width: 480px;
     height: 60px;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) {

@@ -49,22 +49,29 @@
     border: none;
 }
 
-.link__item {
+.link {
     font-family: variables.$main-text;
-    font-weight: 500;
-    font-size: 40px;
-    color: #212121;
-    text-decoration: none;
+        font-weight: 500;
+        font-size: 40px;
+        color: #212121;
+        text-decoration: none;
         line-height: calc(46.88/40);
-        margin-left: 40px;
-    &:hover,
+    margin-bottom: 32px;
+        &:hover,
         &:focus {
             color: variables.$link-color;
         }
     }
 
-.mobile-menu__contacts {
-margin-top: 306px;
+
+  .mobile-menu__contacts {
+      margin-top: 274px;
+
+  }
+
+
+.contacts__item {
+margin-bottom: 32px;
 }
 .contacts__phone {
     font-family: variables.$main-text;
@@ -72,9 +79,7 @@ margin-top: 306px;
         font-size: 34px;
         color: variables.$link-color;
         text-decoration: none;
-        line-height: calc(39.84/34);
-        margin-left: 40px;   
-        margin-bottom: 32px;
+        line-height: calc(39.84/34); 
 }
 .contacts__email {
     font-family: variables.$main-text;
@@ -83,8 +88,7 @@ margin-top: 306px;
         color: variables.$secondary-text-color;
         text-decoration: none;
         line-height: calc(28.13/24);
-        margin-left: 40px;
-        margin-top: 32px;
+      
 }
 .mobile-menu__social {
     display: flex;
@@ -93,6 +97,9 @@ margin-top: 306px;
 .social__item:not(:last-child) {
     margin-right: 10px;
     border-right: #21212133;
+}
+.social__item{
+    margin-bottom: 48px;
 }
 .social__link {
 color: #2196F3;
