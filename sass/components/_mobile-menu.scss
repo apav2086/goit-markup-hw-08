@@ -112,6 +112,11 @@ font-family: variables.$main-text;
 font-weight: 500;
 font-size: 18px;
 line-height: calc(22/18);
+@media  (min-width: 320px) and (max-width: 479px)  {
+    font-size: 15px;
+    line-height: calc(19/15);
+    
+}
 }
 
   .vertical-line {
