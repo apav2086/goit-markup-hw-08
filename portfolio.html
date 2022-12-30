@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header class="header__section">
+   <!--<header class="header__section">
         <div class="container header__container">
             <a href="./index.html" class="header__logo">WebStudio</a>
             <nav class="navigation">
@@ -43,14 +43,20 @@
                     </a>
                 </li>
                 <li class="contact__item">
-                    <a class="contact__link" href="tel:380961111111">
+                    <a class="contact__link contact__phone" href="tel:12127724150">
                         <svg class="contact__icon" width="10px" height="16px">
                             <use href="./images/sprite.svg#icon-smartphone"></use>
                         </svg>
-                        +380961111111</a>
+                        +12127724150</a>
+                    </li>
                 </li>
-    
             </ul>
+            <button class="open-btn js-open-menu"><svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg></button>
         </div>
     </header>
     <main>
@@ -71,13 +77,16 @@
                     </li>
                     <li class="button-item">
                         <button type="button" class="portfolio-filter">Marketing</button>
-                    </li>
+                    </li> -->
                 </ul>
                 <ul class="portfolio-list ">
                     <li class="portfolio-item">
                     <div class="overlay">
-                        <img class="portfolio-image" src="./images/img8portfolio-website.jpg"
-                            alt="picture of technoduck website" width="370" height="294">
+                        <picture class="portfolio-image" >
+                            <source srcset="./images/img8portfolio-website1x.jpg 1x" media="(max-width:767px)" />
+                            <source srcset="./images/img8portfolio-website2x.jpg 2x" media="(min-width:768px)" />
+                            <img src="./images/img8portfolio-website.jpg" alt="picture of technoduck website" />
+                        </picture>
                         <p class="overlay-text">
                             Technoduck is a state-of-the-art
                             coronavirus distribution platform.
@@ -92,8 +101,11 @@
                     </li>
                     <li class="portfolio-item">
                     <div class="overlay">
-                        <img class="portfolio-image" src="./images/img9portfolio-sport-poster.jpg"
-                            alt="picture of sport poster" width="370" height="294">
+                        <picture class="portfolio-image">
+                            <source srcset="./images/img9portfolio-sport-poster1x.jpg 1x" media="(max-width:767px)" />
+                            <source srcset="./images/img9portfolio-sport-poster2x.jpg 2x" media="(min-width:768px)" />
+                            <img src="./images/img9portfolio-sport-poster.jpg" alt="picture of sport poster" />
+                        </picture>
                         <p class="overlay-text">
                             Technoduck is a state-of-the-art
                             coronavirus distribution platform.
@@ -108,8 +120,11 @@
                     </li>
                     <li class="portfolio-item">
                     <div class="overlay">
-                        <img class="portfolio-image" src="./images/img10portfolio-restaurant-app.jpg"
-                            alt="picture of restaurant logo" width="370" height="294">
+                        <picture class="portfolio-image">
+                            <source srcset="./images/img10portfolio-restaurant-app1x.jpg 1x" media="(max-width:767px)" />
+                            <source srcset="./images/img10portfolio-restaurant-app2x.jpg 2x" media="(min-width:768px)" />
+                            <img src="./images/img10portfolio-restaurant-app.jpg" alt="picture of restaurant logo" />
+                        </picture>
                         <p class="overlay-text">
                             Technoduck is a state-of-the-art
                             coronavirus distribution platform.
@@ -124,8 +139,11 @@
                     </li>
                     <li class="portfolio-item">
                     <div class="overlay">
-                        <img class="portfolio-image" src="./images/img11portfolio-marketing.jpg"
-                            alt="picture of head-phones" width="370" height="294">
+                        <picture class="portfolio-image">
+                            <source srcset="./images/img11portfolio-marketing1x.jpg 1x" media="(max-width:767px)" />
+                            <source srcset="./images/img11portfolio-marketing2x.jpg 2x" media="(min-width:768px)" />
+                            <img src="./images/img11portfolio-marketing.jpg" alt="picture of head-phones" />
+                        </picture>
                         <p class="overlay-text">
                             Technoduck is a state-of-the-art
                             coronavirus distribution platform.
@@ -140,8 +158,11 @@
                     </li>
                     <li class="portfolio-item">
                     <div class="overlay">
-                        <img class="portfolio-image" src="./images/img12portfolio-project-boxes.jpg"
-                            alt="picture of personalized boxes" width="370" height="294">
+                        <picture class="portfolio-image">
+                            <source srcset="./images/img12portfolio-project-boxes1x.jpg 1x" media="(max-width:767px)" />
+                            <source srcset="./images/img12portfolio-project-boxes2x.jpg 2x" media="(min-width:768px)" />
+                            <img src="./images/img12portfolio-project-boxes.jpg" alt="picture of personalized boxes" />
+                        </picture>
                         <p class="overlay-text">
                             Technoduck is a state-of-the-art
                             coronavirus distribution platform.
@@ -155,8 +176,11 @@
                         </div>
                     <li class="portfolio-item">
                     <div class="overlay">
-                        <img class="portfolio-image" src="./images/img13portfolio-inspiration-website.jpg"
-                            alt="picture of inspiration website" width="370" height="294">
+                        <picture class="portfolio-image">
+                            <source srcset="./images/img13portfolio-inspiration-website1x.jpg 1x" media="(max-width:767px)" />
+                            <source srcset="./images/img13portfolio-inspiration-website2x.jpg 2x" media="(min-width:768px)" />
+                            <img src="./images/img13portfolio-inspiration-website.jpg" alt="picture of inspiration website" />
+                        </picture>
                         <p class="overlay-text">
                             Technoduck is a state-of-the-art
                             coronavirus distribution platform.
@@ -171,8 +195,11 @@
                     </li>
                     <li class="portfolio-item">
                     <div class="overlay">
-                        <img class="portfolio-image" src="./images/img14portfolio-limited-edition.jpg"
-                            alt="picture of magazines" width="370" height="294">
+                        <picture class="portfolio-image">
+                            <source srcset="./images/img14portfolio-limited-edition1x.jpg 1x" media="(max-width:767px)" />
+                            <source srcset="./images/img14portfolio-limited-edition2x.jpg 2x" media="(min-width:768px)" />
+                            <img src="./images/img14portfolio-limited-edition.jpg" alt="picture of magazines" />
+                        </picture>
                         <p class="overlay-text">
                             Technoduck is a state-of-the-art
                             coronavirus distribution platform.
@@ -187,8 +214,11 @@
                     </li>
                     <li class="portfolio-item">
                     <div class="overlay">
-                        <img class="portfolio-image" src="./images/img15portfolio-project-lab.jpg"
-                            alt="picture of tag with logo" width="370" height="294">
+                        <picture class="portfolio-image">
+                            <source srcset="./images/img15portfolio-project-lab1x.jpg 1x" media="(max-width:767px)" />
+                            <source srcset="./images/img15portfolio-project-lab2x.jpg 2x" media="(min-width:768px)" />
+                            <img src="./images/img14portfolio-limited-edition.jpg" alt="picture of tag with logo" />
+                        </picture>
                         <p class="overlay-text">
                             Technoduck is a state-of-the-art
                             coronavirus distribution platform.
@@ -203,8 +233,11 @@
                     </li>
                     <li class="portfolio-item">
                     <div class="overlay">
-                        <img class="portfolio-image" src="./images/img16portfolio-growing-business.jpg"
-                            alt="picture of growing business app" width="370" height="294">
+                        <picture class="portfolio-image">
+                            <source srcset="./images/img16portfolio-growing-business1x.jpg 1x" media="(max-width:767px)" />
+                            <source srcset="./images/img16portfolio-growing-business2x.jpg 2x" media="(min-width:768px)" />
+                            <img src="./images/img16portfolio-growing-business.jpg" alt="picture of growing business app" />
+                        </picture>
                         <p class="overlay-text">
                             Technoduck is a state-of-the-art
                             coronavirus distribution platform.
@@ -221,7 +254,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer__section">
+    <!--<footer class="footer__section">
         <div class="footer__container">
             <div class="footer__container--left"><a class="footer__logo" href="./index.html">WebStudio</a>
     
@@ -276,7 +309,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer>-->
     </body>
     
     </html>

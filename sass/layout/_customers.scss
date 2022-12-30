@@ -17,15 +17,23 @@
 .customers__list {
     display: flex;
     flex-wrap: wrap;
+    @media screen and (max-width: 480px) {
+            width: auto;
+            justify-content: space-between;
+    
+        }
   
 }
 .customers__item {
     margin-right: 30px;
     margin-bottom: 30px;
+    
+
     @media screen  and (min-width: 480px) and (max-width: 767px) {
         width: 210px;
         &:nth-child(2n) {
             margin-right: 0px;
+          
         }
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
