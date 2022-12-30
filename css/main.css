@@ -1322,16 +1322,10 @@ textarea:focus {
   display: flex;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .portfolio-list {
-    width: 310px;
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .portfolio-list {
-    width: 450px;
+    flex-direction: column;
+    align-items: center;
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -1353,9 +1347,6 @@ textarea:focus {
   }
   .portfolio-item:nth-child(odd) {
     margin-right: 30px;
-  }
-  .portfolio-item:nth-child(3n) {
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
