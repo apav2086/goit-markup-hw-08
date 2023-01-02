@@ -306,12 +306,6 @@ img {
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
-@media (max-width: 479px) {
-  .menu-container {
-    width: auto;
-    height: auto;
-  }
-}
 
 .menu-container.is-open {
   transform: translateX(0);
@@ -368,15 +362,12 @@ img {
 
 .mobile-menu__social {
   display: flex;
+  margin-bottom: 48px;
 }
 
 .social__item:not(:last-child) {
-  margin-right: 5px;
+  margin-right: 10px;
   border-right: rgba(33, 33, 33, 0.2);
-}
-
-.social__item {
-  margin-bottom: 48px;
 }
 
 .social__link {
@@ -1340,11 +1331,11 @@ textarea:focus {
   }
 }
 
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (max-width: 767px) {
-  .portfolio-item {
-    display: flex;
-    flex-direction: column;
-  }
   .portfolio-item:not(:first-child) {
     margin-top: 30px;
   }
@@ -1362,47 +1353,6 @@ textarea:focus {
   }
 }
 
-/*/
-.portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-           flex-direction: column;
-           align-items: center;
-        margin-left: 15px;
-            margin-right: 15px;
-        }
-
-  @media screen  and (min-width: 1200px) {
-      margin-top: calc(-1 * variables.$card-gap);
-      margin-left: calc(-1 * variables.$card-gap);
-  }
-}
-
-
-.portfolio-item {
-    margin-top: variables.$card-gap;
-        cursor: pointer;
-
-
-
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-            width: 354px;
-            &:nth-child(odd) {
-                margin-right: 30px;
-            }
-
-
-        }
-    @media screen and (min-width: 1200px) {
-flex-basis: calc(33.3333333333% - variables.$card-gap);
-    margin-left: variables.$card-gap;
-    }
-        }
-*/
 .portfolio-image {
   display: block;
   max-width: 100%;

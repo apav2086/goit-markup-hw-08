@@ -82,9 +82,9 @@ justify-content: center;
 }
 
 .portfolio-item {
+    display: flex;
+    flex-direction: column;
     @media screen and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
         &:not(:first-child) {
             margin-top: 30px;
 
@@ -100,47 +100,7 @@ justify-content: center;
     @media screen and (min-width: 1200px) {
         flex-basis: calc(100% / 3 - variables.$card-gap);
     }
-}/*/
-.portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-           flex-direction: column;
-           align-items: center;
-        margin-left: 15px;
-            margin-right: 15px;
-        }
- 
-  @media screen  and (min-width: 1200px) {
-      margin-top: calc(-1 * variables.$card-gap);
-      margin-left: calc(-1 * variables.$card-gap);
-  }
 }
-
-
-.portfolio-item {
-    margin-top: variables.$card-gap;
-        cursor: pointer;
-   
-    
-  
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-            width: 354px;
-            &:nth-child(odd) {
-                margin-right: 30px;
-            }
-    
-           
-        }
-    @media screen and (min-width: 1200px) {
-flex-basis: calc(33.3333333333% - variables.$card-gap);
-    margin-left: variables.$card-gap;
-    }
-        }
-*/
 
 .portfolio-image {
     display: block;

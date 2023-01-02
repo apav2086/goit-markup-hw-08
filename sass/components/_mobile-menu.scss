@@ -35,10 +35,7 @@
     z-index: 999;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
-    @media (max-width: 479px) {
-        width: auto;
-        height: auto;
-}
+   
 }
 
 .menu-container.is-open {
@@ -97,15 +94,13 @@ margin-bottom: 32px;
 }
 .mobile-menu__social {
     display: flex;
- 
+margin-bottom: 48px;
 }
 .social__item:not(:last-child) {
-    margin-right: 5px;
+    margin-right: 10px;
     border-right: #21212133;
 }
-.social__item{
-    margin-bottom: 48px;
-}
+
 .social__link {
 color: #2196F3;
 font-family: variables.$main-text;
